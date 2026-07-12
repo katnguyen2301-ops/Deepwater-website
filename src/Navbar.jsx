@@ -46,7 +46,7 @@ function ServicesDropdown() {
 }
 
 function Navbar() {
-  const practice = locations[0]
+  const practice = locations.find((location) => location.slug === 'deepwater-dental-cosmetics')
 
   return (
     <nav className="navbar">
