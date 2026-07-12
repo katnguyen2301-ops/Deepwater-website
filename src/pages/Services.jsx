@@ -11,6 +11,9 @@ import Dentures from './services/Dentures'
 import ToothExtractions from './services/ToothExtractions'
 import WisdomTeeth from './services/WisdomTeeth'
 import GumDiseaseTreatment from './services/GumDiseaseTreatment'
+import TeethGrindingJawPain from './services/TeethGrindingJawPain'
+import TeethWhitening from './services/TeethWhitening'
+import SportsMouthguards from './services/SportsMouthguards'
 
 function Services() {
   return (
@@ -67,6 +70,18 @@ function Services() {
         <Route
           path="gum-disease-treatment"
           element={<GumDiseaseTreatment />}
+        />
+        <Route
+          path="teeth-grinding-jaw-pain"
+          element={<TeethGrindingJawPain />}
+        />
+        <Route
+          path="teeth-whitening"
+          element={<TeethWhitening />}
+        />
+        <Route
+          path="sports-mouthguards"
+          element={<SportsMouthguards />}
         />
       </Routes>
     </section>

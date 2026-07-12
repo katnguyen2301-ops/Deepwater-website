@@ -11,6 +11,9 @@ const services = [
   { path: 'tooth-extractions', label: 'Tooth Extractions' },
   { path: 'wisdom-teeth', label: 'Wisdom Teeth' },
   { path: 'gum-disease-treatment', label: 'Gum Disease Treatment' },
+  { path: 'teeth-grinding-jaw-pain', label: 'Teeth Grinding & Jaw Pain' },
+  { path: 'teeth-whitening', label: 'Teeth Whitening' },
+  { path: 'sports-mouthguards', label: 'Sports Mouthguards' },
 ]
 
 export default services
