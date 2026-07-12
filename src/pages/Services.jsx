@@ -3,6 +3,10 @@ import CheckupsPreventiveCare from './services/CheckupsPreventiveCare'
 import ChildrensDentistry from './services/ChildrensDentistry'
 import EmergencyDentistry from './services/EmergencyDentistry'
 import ToothColouredFillings from './services/ToothColouredFillings'
+import RootCanalTreatment from './services/RootCanalTreatment'
+import DentalCrowns from './services/DentalCrowns'
+import DentalBridges from './services/DentalBridges'
+import DentalImplants from './services/DentalImplants'
 
 function Services() {
   return (
@@ -27,6 +31,22 @@ function Services() {
         <Route
           path="tooth-coloured-fillings"
           element={<ToothColouredFillings />}
+        />
+        <Route
+          path="root-canal-treatment"
+          element={<RootCanalTreatment />}
+        />
+        <Route
+          path="dental-crowns"
+          element={<DentalCrowns />}
+        />
+        <Route
+          path="dental-bridges"
+          element={<DentalBridges />}
+        />
+        <Route
+          path="dental-implants"
+          element={<DentalImplants />}
         />
       </Routes>
     </section>
