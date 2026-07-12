@@ -1,3 +1,38 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'What should I do if my tooth gets knocked out?',
+    answer:
+      'Try to find the tooth and hold it by the crown, not the root. If possible, gently rinse it and place it back in the socket, or keep it in milk, and see a dentist immediately.',
+  },
+  {
+    question: 'Does emergency treatment hurt?',
+    answer:
+      "We'll always aim to make you as comfortable as possible, and pain relief is often part of emergency treatment.",
+  },
+  {
+    question: 'How quickly can I be seen?',
+    answer:
+      "We aim to see emergency patients as soon as possible. Contact us straight away and we'll do our best to fit you in quickly.",
+  },
+  {
+    question: 'What counts as a dental emergency?',
+    answer:
+      "Severe pain, swelling, knocked-out or badly damaged teeth, and uncontrolled bleeding are all considered emergencies. If you're unsure, it's best to call us.",
+  },
+  {
+    question: "What if I can't get in straight away?",
+    answer:
+      "We'll give you advice on managing the problem until you can be seen, such as pain relief options or how to protect a damaged tooth.",
+  },
+  {
+    question: 'Can a knocked-out tooth be saved?',
+    answer:
+      'Sometimes, especially if you act quickly and see a dentist within a short time. It depends on the individual situation.',
+  },
+]
+
 function EmergencyDentistry() {
   return (
     <article className="service-page">
@@ -71,44 +106,7 @@ function EmergencyDentistry() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>What should I do if my tooth gets knocked out?</h3>
-      <p>
-        Try to find the tooth and hold it by the crown, not the root. If
-        possible, gently rinse it and place it back in the socket, or keep
-        it in milk, and see a dentist immediately.
-      </p>
-
-      <h3>Does emergency treatment hurt?</h3>
-      <p>
-        We'll always aim to make you as comfortable as possible, and pain
-        relief is often part of emergency treatment.
-      </p>
-
-      <h3>How quickly can I be seen?</h3>
-      <p>
-        We aim to see emergency patients as soon as possible. Contact us
-        straight away and we'll do our best to fit you in quickly.
-      </p>
-
-      <h3>What counts as a dental emergency?</h3>
-      <p>
-        Severe pain, swelling, knocked-out or badly damaged teeth, and
-        uncontrolled bleeding are all considered emergencies. If you're
-        unsure, it's best to call us.
-      </p>
-
-      <h3>What if I can't get in straight away?</h3>
-      <p>
-        We'll give you advice on managing the problem until you can be seen,
-        such as pain relief options or how to protect a damaged tooth.
-      </p>
-
-      <h3>Can a knocked-out tooth be saved?</h3>
-      <p>
-        Sometimes, especially if you act quickly and see a dentist within a
-        short time. It depends on the individual situation.
-      </p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

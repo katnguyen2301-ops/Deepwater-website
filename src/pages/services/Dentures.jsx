@@ -1,3 +1,38 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'Do dentures hurt?',
+    answer:
+      'Getting used to a new denture can involve some initial discomfort or rubbing as your mouth adjusts. Let your dentist know if soreness continues so any adjustments can be made.',
+  },
+  {
+    question: 'How long does the process take?',
+    answer:
+      'It usually takes a few visits over several weeks to design, try in, and fit a denture properly.',
+  },
+  {
+    question: 'How long do dentures last?',
+    answer:
+      'This varies, but dentures generally need replacing or relining every several years as your gums and jaw change shape over time.',
+  },
+  {
+    question: 'What are the alternatives?',
+    answer:
+      "Depending on your situation, alternatives may include a dental bridge or dental implants. Your dentist can discuss what's suitable for you.",
+  },
+  {
+    question: 'What happens if I delay treatment?',
+    answer:
+      'Missing teeth left unaddressed can affect your bite, chewing, speech, and the position of your remaining teeth over time.',
+  },
+  {
+    question: 'Can I sleep in my dentures?',
+    answer:
+      "It's often recommended to remove them overnight to give your gums a rest and help prevent irritation, though your dentist can advise based on your situation.",
+  },
+]
+
 function Dentures() {
   return (
     <article className="service-page">
@@ -75,45 +110,7 @@ function Dentures() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>Do dentures hurt?</h3>
-      <p>
-        Getting used to a new denture can involve some initial discomfort or
-        rubbing as your mouth adjusts. Let your dentist know if soreness
-        continues so any adjustments can be made.
-      </p>
-
-      <h3>How long does the process take?</h3>
-      <p>
-        It usually takes a few visits over several weeks to design, try in,
-        and fit a denture properly.
-      </p>
-
-      <h3>How long do dentures last?</h3>
-      <p>
-        This varies, but dentures generally need replacing or relining every
-        several years as your gums and jaw change shape over time.
-      </p>
-
-      <h3>What are the alternatives?</h3>
-      <p>
-        Depending on your situation, alternatives may include a dental
-        bridge or dental implants. Your dentist can discuss what's suitable
-        for you.
-      </p>
-
-      <h3>What happens if I delay treatment?</h3>
-      <p>
-        Missing teeth left unaddressed can affect your bite, chewing,
-        speech, and the position of your remaining teeth over time.
-      </p>
-
-      <h3>Can I sleep in my dentures?</h3>
-      <p>
-        It's often recommended to remove them overnight to give your gums a
-        rest and help prevent irritation, though your dentist can advise
-        based on your situation.
-      </p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

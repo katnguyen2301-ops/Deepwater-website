@@ -1,3 +1,38 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'Does gum disease treatment hurt?',
+    answer:
+      'A standard clean is generally comfortable. For deeper cleaning, local anaesthetic may be used if needed, and any sensitivity afterwards is usually mild and temporary.',
+  },
+  {
+    question: 'How long does treatment take?',
+    answer:
+      'This depends on the severity of the gum disease, ranging from a single clean to a series of visits for more advanced cases.',
+  },
+  {
+    question: 'Can gum disease be reversed?',
+    answer:
+      'Early-stage gum disease (gingivitis) can often be improved with treatment and better oral hygiene. More advanced gum disease can generally be managed and controlled, though some effects may not be fully reversible.',
+  },
+  {
+    question: 'What are the alternatives?',
+    answer:
+      'Treatment is generally recommended for gum disease, as leaving it untreated can allow it to progress. Your dentist can explain the specific options for your situation.',
+  },
+  {
+    question: 'What happens if I delay treatment?',
+    answer:
+      'Untreated gum disease can progress and may lead to further bone loss, loose teeth, and in some cases, tooth loss.',
+  },
+  {
+    question: 'How can I prevent gum disease?',
+    answer:
+      'Brushing twice daily, flossing regularly, and attending routine check-ups all help support healthy gums.',
+  },
+]
+
 function GumDiseaseTreatment() {
   return (
     <article className="service-page">
@@ -74,46 +109,7 @@ function GumDiseaseTreatment() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>Does gum disease treatment hurt?</h3>
-      <p>
-        A standard clean is generally comfortable. For deeper cleaning,
-        local anaesthetic may be used if needed, and any sensitivity
-        afterwards is usually mild and temporary.
-      </p>
-
-      <h3>How long does treatment take?</h3>
-      <p>
-        This depends on the severity of the gum disease, ranging from a
-        single clean to a series of visits for more advanced cases.
-      </p>
-
-      <h3>Can gum disease be reversed?</h3>
-      <p>
-        Early-stage gum disease (gingivitis) can often be improved with
-        treatment and better oral hygiene. More advanced gum disease can
-        generally be managed and controlled, though some effects may not be
-        fully reversible.
-      </p>
-
-      <h3>What are the alternatives?</h3>
-      <p>
-        Treatment is generally recommended for gum disease, as leaving it
-        untreated can allow it to progress. Your dentist can explain the
-        specific options for your situation.
-      </p>
-
-      <h3>What happens if I delay treatment?</h3>
-      <p>
-        Untreated gum disease can progress and may lead to further bone
-        loss, loose teeth, and in some cases, tooth loss.
-      </p>
-
-      <h3>How can I prevent gum disease?</h3>
-      <p>
-        Brushing twice daily, flossing regularly, and attending routine
-        check-ups all help support healthy gums.
-      </p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

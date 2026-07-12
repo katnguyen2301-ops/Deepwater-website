@@ -1,3 +1,37 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'Will it hurt?',
+    answer:
+      "A check-up shouldn't cause any pain. We keep things gentle and explain each step so your child knows what to expect.",
+  },
+  {
+    question: 'At what age should my child first see a dentist?',
+    answer:
+      'Around their first birthday, or once their first tooth appears, is a good time to start.',
+  },
+  {
+    question: 'How long does a visit take?',
+    answer:
+      "Usually around 20 to 30 minutes, though this can vary depending on your child's age and needs.",
+  },
+  {
+    question: 'My child is nervous about the dentist. Can you help?',
+    answer:
+      'Yes. We take extra time with anxious kids, go at their pace, and use simple, friendly language to help them feel at ease. For some children, nitrous oxide (happy gas) may also be used to help them feel more relaxed, if appropriate.',
+  },
+  {
+    question: "Do baby teeth really matter if they'll fall out anyway?",
+    answer:
+      'Yes. Baby teeth help with eating, speech, and guide adult teeth into place, so looking after them matters.',
+  },
+  {
+    question: 'How often should my child visit?',
+    answer: 'Every six months is generally recommended, similar to adults.',
+  },
+]
+
 function ChildrensDentistry() {
   return (
     <article className="service-page">
@@ -84,41 +118,7 @@ function ChildrensDentistry() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>Will it hurt?</h3>
-      <p>
-        A check-up shouldn't cause any pain. We keep things gentle and
-        explain each step so your child knows what to expect.
-      </p>
-
-      <h3>At what age should my child first see a dentist?</h3>
-      <p>
-        Around their first birthday, or once their first tooth appears, is a
-        good time to start.
-      </p>
-
-      <h3>How long does a visit take?</h3>
-      <p>
-        Usually around 20 to 30 minutes, though this can vary depending on
-        your child's age and needs.
-      </p>
-
-      <h3>My child is nervous about the dentist. Can you help?</h3>
-      <p>
-        Yes. We take extra time with anxious kids, go at their pace, and use
-        simple, friendly language to help them feel at ease. For some
-        children, nitrous oxide (happy gas) may also be used to help them
-        feel more relaxed, if appropriate.
-      </p>
-
-      <h3>Do baby teeth really matter if they'll fall out anyway?</h3>
-      <p>
-        Yes. Baby teeth help with eating, speech, and guide adult teeth into
-        place, so looking after them matters.
-      </p>
-
-      <h3>How often should my child visit?</h3>
-      <p>Every six months is generally recommended, similar to adults.</p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

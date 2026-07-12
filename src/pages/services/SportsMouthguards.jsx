@@ -1,3 +1,38 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'How is a custom mouthguard different from a store-bought one?',
+    answer:
+      'A custom mouthguard is made from an impression or scan of your own teeth, so it generally fits more precisely and comfortably than a generic, one-size version.',
+  },
+  {
+    question: 'How long does it take to get a mouthguard made?',
+    answer:
+      'This typically takes a couple of visits, allowing time for the mouthguard to be custom-made after your impressions are taken.',
+  },
+  {
+    question: 'How long do mouthguards last?',
+    answer:
+      "This depends on how often it's used and how well it's cared for. Children may need a new one more frequently as their teeth and jaw grow.",
+  },
+  {
+    question: 'Can I get a mouthguard if I have braces?',
+    answer:
+      "Yes, mouthguards can be designed to accommodate braces. Let your dentist know if you're currently undergoing orthodontic treatment.",
+  },
+  {
+    question: "What happens if I don't wear a mouthguard during sport?",
+    answer:
+      "Without protection, there's a greater risk of dental injury, such as chipped, broken, or knocked-out teeth, during contact sport or high-impact activities.",
+  },
+  {
+    question: 'Can adults get custom mouthguards too?',
+    answer:
+      'Yes, custom mouthguards are suitable for both children and adults involved in sports with a risk of dental injury.',
+  },
+]
+
 function SportsMouthguards() {
   return (
     <article className="service-page">
@@ -73,45 +108,7 @@ function SportsMouthguards() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>How is a custom mouthguard different from a store-bought one?</h3>
-      <p>
-        A custom mouthguard is made from an impression or scan of your own
-        teeth, so it generally fits more precisely and comfortably than a
-        generic, one-size version.
-      </p>
-
-      <h3>How long does it take to get a mouthguard made?</h3>
-      <p>
-        This typically takes a couple of visits, allowing time for the
-        mouthguard to be custom-made after your impressions are taken.
-      </p>
-
-      <h3>How long do mouthguards last?</h3>
-      <p>
-        This depends on how often it's used and how well it's cared for.
-        Children may need a new one more frequently as their teeth and jaw
-        grow.
-      </p>
-
-      <h3>Can I get a mouthguard if I have braces?</h3>
-      <p>
-        Yes, mouthguards can be designed to accommodate braces. Let your
-        dentist know if you're currently undergoing orthodontic treatment.
-      </p>
-
-      <h3>What happens if I don't wear a mouthguard during sport?</h3>
-      <p>
-        Without protection, there's a greater risk of dental injury, such
-        as chipped, broken, or knocked-out teeth, during contact sport or
-        high-impact activities.
-      </p>
-
-      <h3>Can adults get custom mouthguards too?</h3>
-      <p>
-        Yes, custom mouthguards are suitable for both children and adults
-        involved in sports with a risk of dental injury.
-      </p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

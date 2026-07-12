@@ -1,3 +1,38 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'Does root canal treatment hurt?',
+    answer:
+      "Local anaesthetic is used to numb the area during treatment, so you shouldn't feel pain. Some tenderness afterwards is normal and usually settles within a few days.",
+  },
+  {
+    question: 'How long does it take?',
+    answer:
+      'Treatment can often be completed in one to two visits, depending on the tooth and the extent of the infection.',
+  },
+  {
+    question: 'How long does a root-treated tooth last?',
+    answer:
+      "This varies between patients, depending on factors such as the tooth's condition and how well it's cared for afterwards. A crown is often recommended to help protect the tooth going forward.",
+  },
+  {
+    question: 'What are the alternatives?',
+    answer:
+      'The main alternative is having the tooth removed. Your dentist can talk you through the pros and cons of each option for your situation.',
+  },
+  {
+    question: 'What happens if I delay treatment?',
+    answer:
+      'Leaving an infected tooth untreated can allow the infection to spread, which may lead to more pain, further complications, or the eventual loss of the tooth.',
+  },
+  {
+    question: 'Will I need a crown afterwards?',
+    answer:
+      "Often, yes, particularly for back teeth that take more chewing pressure. Your dentist will let you know if this is recommended for your tooth.",
+  },
+]
+
 function RootCanalTreatment() {
   return (
     <article className="service-page">
@@ -82,47 +117,7 @@ function RootCanalTreatment() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>Does root canal treatment hurt?</h3>
-      <p>
-        Local anaesthetic is used to numb the area during treatment, so you
-        shouldn't feel pain. Some tenderness afterwards is normal and
-        usually settles within a few days.
-      </p>
-
-      <h3>How long does it take?</h3>
-      <p>
-        Treatment can often be completed in one to two visits, depending on
-        the tooth and the extent of the infection.
-      </p>
-
-      <h3>How long does a root-treated tooth last?</h3>
-      <p>
-        This varies between patients, depending on factors such as the
-        tooth's condition and how well it's cared for afterwards. A crown is
-        often recommended to help protect the tooth going forward.
-      </p>
-
-      <h3>What are the alternatives?</h3>
-      <p>
-        The main alternative is having the tooth removed. Your dentist can
-        talk you through the pros and cons of each option for your
-        situation.
-      </p>
-
-      <h3>What happens if I delay treatment?</h3>
-      <p>
-        Leaving an infected tooth untreated can allow the infection to
-        spread, which may lead to more pain, further complications, or the
-        eventual loss of the tooth.
-      </p>
-
-      <h3>Will I need a crown afterwards?</h3>
-      <p>
-        Often, yes, particularly for back teeth that take more chewing
-        pressure. Your dentist will let you know if this is recommended for
-        your tooth.
-      </p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

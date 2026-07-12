@@ -1,3 +1,38 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'Does getting an implant hurt?',
+    answer:
+      "The procedure is carried out under local anaesthetic, so you shouldn't feel pain during placement. Some discomfort or swelling afterwards is normal and can usually be managed with pain relief.",
+  },
+  {
+    question: 'How long does the whole process take?',
+    answer:
+      'It varies, but the full process, from placement to attaching the final crown, often takes several months, allowing time for healing.',
+  },
+  {
+    question: 'How long do implants last?',
+    answer:
+      'This depends on individual factors such as oral hygiene, bone health, and lifestyle, so your dentist can give you a better idea based on your situation.',
+  },
+  {
+    question: 'What are the alternatives?',
+    answer:
+      'Alternatives include a dental bridge or a removable denture. Your dentist can discuss which option may suit your needs.',
+  },
+  {
+    question: 'What happens if I delay treatment?',
+    answer:
+      'Over time, the jawbone in the area of a missing tooth can gradually shrink, which may affect suitability for an implant later on. Your dentist can advise on timing based on your situation.',
+  },
+  {
+    question: 'Am I too old for a dental implant?',
+    answer:
+      "Age alone doesn't rule out implants. Suitability is based more on your general health, bone density, and gum health than your age.",
+  },
+]
+
 function DentalImplants() {
   return (
     <article className="service-page">
@@ -83,45 +118,7 @@ function DentalImplants() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>Does getting an implant hurt?</h3>
-      <p>
-        The procedure is carried out under local anaesthetic, so you
-        shouldn't feel pain during placement. Some discomfort or swelling
-        afterwards is normal and can usually be managed with pain relief.
-      </p>
-
-      <h3>How long does the whole process take?</h3>
-      <p>
-        It varies, but the full process, from placement to attaching the
-        final crown, often takes several months, allowing time for healing.
-      </p>
-
-      <h3>How long do implants last?</h3>
-      <p>
-        This depends on individual factors such as oral hygiene, bone
-        health, and lifestyle, so your dentist can give you a better idea
-        based on your situation.
-      </p>
-
-      <h3>What are the alternatives?</h3>
-      <p>
-        Alternatives include a dental bridge or a removable denture. Your
-        dentist can discuss which option may suit your needs.
-      </p>
-
-      <h3>What happens if I delay treatment?</h3>
-      <p>
-        Over time, the jawbone in the area of a missing tooth can gradually
-        shrink, which may affect suitability for an implant later on. Your
-        dentist can advise on timing based on your situation.
-      </p>
-
-      <h3>Am I too old for a dental implant?</h3>
-      <p>
-        Age alone doesn't rule out implants. Suitability is based more on
-        your general health, bone density, and gum health than your age.
-      </p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

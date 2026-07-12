@@ -1,3 +1,38 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'Does getting a bridge hurt?',
+    answer:
+      "Local anaesthetic is used while the supporting teeth are prepared, so you shouldn't feel pain during the procedure. Some sensitivity afterwards is common and usually settles.",
+  },
+  {
+    question: 'How long does the process take?',
+    answer:
+      'It generally takes two visits over a few weeks, allowing time for your bridge to be custom-made.',
+  },
+  {
+    question: 'How long do bridges last?',
+    answer:
+      'This depends on factors such as oral hygiene, your bite, and the condition of the supporting teeth, so your dentist can give you a better idea for your situation.',
+  },
+  {
+    question: 'What are the alternatives?',
+    answer:
+      'Alternatives include a dental implant or a removable partial denture. Your dentist can explain the pros and cons of each based on your circumstances.',
+  },
+  {
+    question: 'What happens if I delay treatment?',
+    answer:
+      'Leaving a gap untreated can sometimes lead to neighbouring teeth shifting or your bite changing over time, which may complicate future treatment.',
+  },
+  {
+    question: 'Is a bridge cleaned the same way as normal teeth?',
+    answer:
+      "Mostly, though you'll need to clean underneath the bridge as well, which your dentist can show you how to do.",
+  },
+]
+
 function DentalBridges() {
   return (
     <article className="service-page">
@@ -80,46 +115,7 @@ function DentalBridges() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>Does getting a bridge hurt?</h3>
-      <p>
-        Local anaesthetic is used while the supporting teeth are prepared,
-        so you shouldn't feel pain during the procedure. Some sensitivity
-        afterwards is common and usually settles.
-      </p>
-
-      <h3>How long does the process take?</h3>
-      <p>
-        It generally takes two visits over a few weeks, allowing time for
-        your bridge to be custom-made.
-      </p>
-
-      <h3>How long do bridges last?</h3>
-      <p>
-        This depends on factors such as oral hygiene, your bite, and the
-        condition of the supporting teeth, so your dentist can give you a
-        better idea for your situation.
-      </p>
-
-      <h3>What are the alternatives?</h3>
-      <p>
-        Alternatives include a dental implant or a removable partial
-        denture. Your dentist can explain the pros and cons of each based on
-        your circumstances.
-      </p>
-
-      <h3>What happens if I delay treatment?</h3>
-      <p>
-        Leaving a gap untreated can sometimes lead to neighbouring teeth
-        shifting or your bite changing over time, which may complicate
-        future treatment.
-      </p>
-
-      <h3>Is a bridge cleaned the same way as normal teeth?</h3>
-      <p>
-        Mostly, though you'll need to clean underneath the bridge as well,
-        which your dentist can show you how to do.
-      </p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

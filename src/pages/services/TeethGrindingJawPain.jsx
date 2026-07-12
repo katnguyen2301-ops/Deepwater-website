@@ -1,3 +1,38 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'Does teeth grinding treatment hurt?',
+    answer:
+      'No, assessment is straightforward, and a night guard is designed to be worn comfortably. It may feel unusual for the first few nights while you get used to it.',
+  },
+  {
+    question: 'What causes teeth grinding?',
+    answer:
+      'It can be linked to several factors, including stress, sleep patterns, or the way your teeth and jaw line up. Your dentist can help explore possible contributing factors.',
+  },
+  {
+    question: 'How long does it take to notice a difference?',
+    answer:
+      'This varies between individuals. Some people notice reduced symptoms fairly quickly, while for others it can take longer.',
+  },
+  {
+    question: 'What are the alternatives to a night guard?',
+    answer:
+      'Depending on the cause, your dentist may also suggest lifestyle changes or referral to another health professional, such as for stress management.',
+  },
+  {
+    question: "What happens if I don't treat it?",
+    answer:
+      'Ongoing grinding can lead to worsening tooth wear, jaw discomfort, and other complications over time.',
+  },
+  {
+    question: 'Can children experience teeth grinding too?',
+    answer:
+      "Yes, it's common in children as well, and is often outgrown, but it's worth mentioning to your dentist if you notice it.",
+  },
+]
+
 function TeethGrindingJawPain() {
   return (
     <article className="service-page">
@@ -74,45 +109,7 @@ function TeethGrindingJawPain() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>Does teeth grinding treatment hurt?</h3>
-      <p>
-        No, assessment is straightforward, and a night guard is designed to
-        be worn comfortably. It may feel unusual for the first few nights
-        while you get used to it.
-      </p>
-
-      <h3>What causes teeth grinding?</h3>
-      <p>
-        It can be linked to several factors, including stress, sleep
-        patterns, or the way your teeth and jaw line up. Your dentist can
-        help explore possible contributing factors.
-      </p>
-
-      <h3>How long does it take to notice a difference?</h3>
-      <p>
-        This varies between individuals. Some people notice reduced
-        symptoms fairly quickly, while for others it can take longer.
-      </p>
-
-      <h3>What are the alternatives to a night guard?</h3>
-      <p>
-        Depending on the cause, your dentist may also suggest lifestyle
-        changes or referral to another health professional, such as for
-        stress management.
-      </p>
-
-      <h3>What happens if I don't treat it?</h3>
-      <p>
-        Ongoing grinding can lead to worsening tooth wear, jaw discomfort,
-        and other complications over time.
-      </p>
-
-      <h3>Can children experience teeth grinding too?</h3>
-      <p>
-        Yes, it's common in children as well, and is often outgrown, but
-        it's worth mentioning to your dentist if you notice it.
-      </p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

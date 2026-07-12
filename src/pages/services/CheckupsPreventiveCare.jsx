@@ -1,3 +1,48 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'Does a check-up hurt?',
+    answer:
+      "A check-up and clean is generally a comfortable experience. You may feel some mild sensitivity during the clean, particularly around the gumline or if there's a build-up of tartar, but this is usually brief. Let your dentist know if you're feeling any discomfort so they can adjust their approach.",
+  },
+  {
+    question: 'How long does a check-up take?',
+    answer:
+      'A standard check-up and clean typically takes around 30 to 45 minutes, though this can vary depending on your individual needs and whether X-rays are required.',
+  },
+  {
+    question: 'How often should I have a check-up?',
+    answer:
+      'Most patients are recommended to visit every six months, but this can vary. Some patients may need more frequent visits, while others may be able to space theirs out further, depending on their individual oral health.',
+  },
+  {
+    question: 'Do I need X-rays every visit?',
+    answer:
+      "Not necessarily. X-rays are generally recommended periodically, based on your individual risk factors and dental history, rather than at every single visit. Your dentist will advise what's appropriate for you.",
+  },
+  {
+    question: "What if I haven't been to the dentist in years?",
+    answer:
+      "That's okay — many patients return to dental care after a break. Your dentist will take the time to understand your history and current oral health without judgement, and will explain any findings and options clearly.",
+  },
+  {
+    question: 'What happens if I skip regular check-ups?',
+    answer:
+      'Without regular monitoring, dental issues such as decay or gum disease may go unnoticed and progress further before being identified. This can sometimes mean more involved treatment is needed than if the issue had been caught earlier.',
+  },
+  {
+    question: 'Are check-ups suitable for children?',
+    answer:
+      'Yes, check-ups are recommended for children as part of monitoring the development of their teeth and jaw, and to help them become familiar and comfortable with dental visits from an early age.',
+  },
+  {
+    question: "What's the difference between a check-up and a clean?",
+    answer:
+      "A check-up refers to the examination of your teeth and gums, while a clean refers to the professional removal of plaque and tartar. They're generally carried out together in the same appointment.",
+  },
+]
+
 function CheckupsPreventiveCare() {
   return (
     <article className="service-page">
@@ -190,68 +235,7 @@ function CheckupsPreventiveCare() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>Does a check-up hurt?</h3>
-      <p>
-        A check-up and clean is generally a comfortable experience. You may
-        feel some mild sensitivity during the clean, particularly around the
-        gumline or if there's a build-up of tartar, but this is usually
-        brief. Let your dentist know if you're feeling any discomfort so
-        they can adjust their approach.
-      </p>
-
-      <h3>How long does a check-up take?</h3>
-      <p>
-        A standard check-up and clean typically takes around 30 to 45
-        minutes, though this can vary depending on your individual needs and
-        whether X-rays are required.
-      </p>
-
-      <h3>How often should I have a check-up?</h3>
-      <p>
-        Most patients are recommended to visit every six months, but this can
-        vary. Some patients may need more frequent visits, while others may
-        be able to space theirs out further, depending on their individual
-        oral health.
-      </p>
-
-      <h3>Do I need X-rays every visit?</h3>
-      <p>
-        Not necessarily. X-rays are generally recommended periodically, based
-        on your individual risk factors and dental history, rather than at
-        every single visit. Your dentist will advise what's appropriate for
-        you.
-      </p>
-
-      <h3>What if I haven't been to the dentist in years?</h3>
-      <p>
-        That's okay — many patients return to dental care after a break.
-        Your dentist will take the time to understand your history and
-        current oral health without judgement, and will explain any findings
-        and options clearly.
-      </p>
-
-      <h3>What happens if I skip regular check-ups?</h3>
-      <p>
-        Without regular monitoring, dental issues such as decay or gum
-        disease may go unnoticed and progress further before being
-        identified. This can sometimes mean more involved treatment is
-        needed than if the issue had been caught earlier.
-      </p>
-
-      <h3>Are check-ups suitable for children?</h3>
-      <p>
-        Yes, check-ups are recommended for children as part of monitoring the
-        development of their teeth and jaw, and to help them become familiar
-        and comfortable with dental visits from an early age.
-      </p>
-
-      <h3>What's the difference between a check-up and a clean?</h3>
-      <p>
-        A check-up refers to the examination of your teeth and gums, while a
-        clean refers to the professional removal of plaque and tartar.
-        They're generally carried out together in the same appointment.
-      </p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

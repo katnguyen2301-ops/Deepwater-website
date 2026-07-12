@@ -1,3 +1,38 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'Does having a tooth removed hurt?',
+    answer:
+      "Local anaesthetic is used to numb the area, so you shouldn't feel pain during the procedure. Some soreness afterwards is normal and can usually be managed with pain relief.",
+  },
+  {
+    question: 'How long does an extraction take?',
+    answer:
+      'A straightforward extraction can often be done in a matter of minutes, though more complex cases may take longer.',
+  },
+  {
+    question: 'How long does healing take?',
+    answer:
+      'Initial healing usually takes about one to two weeks, though complete healing of the bone and gum can take longer.',
+  },
+  {
+    question: 'What are the alternatives?',
+    answer:
+      'Depending on the tooth, alternatives may include root canal treatment or other restorative options. Your dentist will discuss whether the tooth can be saved before recommending an extraction.',
+  },
+  {
+    question: 'What happens if I delay treatment?',
+    answer:
+      'Leaving a severely damaged or infected tooth untreated can allow the problem to worsen, potentially affecting neighbouring teeth or your overall health.',
+  },
+  {
+    question: 'Will I need to replace the tooth afterwards?',
+    answer:
+      "This depends on the tooth's location and your individual needs. Your dentist can discuss replacement options, such as a bridge, implant, or denture, if relevant.",
+  },
+]
+
 function ToothExtractions() {
   return (
     <article className="service-page">
@@ -74,46 +109,7 @@ function ToothExtractions() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>Does having a tooth removed hurt?</h3>
-      <p>
-        Local anaesthetic is used to numb the area, so you shouldn't feel
-        pain during the procedure. Some soreness afterwards is normal and
-        can usually be managed with pain relief.
-      </p>
-
-      <h3>How long does an extraction take?</h3>
-      <p>
-        A straightforward extraction can often be done in a matter of
-        minutes, though more complex cases may take longer.
-      </p>
-
-      <h3>How long does healing take?</h3>
-      <p>
-        Initial healing usually takes about one to two weeks, though
-        complete healing of the bone and gum can take longer.
-      </p>
-
-      <h3>What are the alternatives?</h3>
-      <p>
-        Depending on the tooth, alternatives may include root canal
-        treatment or other restorative options. Your dentist will discuss
-        whether the tooth can be saved before recommending an extraction.
-      </p>
-
-      <h3>What happens if I delay treatment?</h3>
-      <p>
-        Leaving a severely damaged or infected tooth untreated can allow the
-        problem to worsen, potentially affecting neighbouring teeth or your
-        overall health.
-      </p>
-
-      <h3>Will I need to replace the tooth afterwards?</h3>
-      <p>
-        This depends on the tooth's location and your individual needs.
-        Your dentist can discuss replacement options, such as a bridge,
-        implant, or denture, if relevant.
-      </p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

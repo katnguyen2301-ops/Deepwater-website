@@ -1,3 +1,37 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'Does getting a filling hurt?',
+    answer:
+      "Local anaesthetic is used to numb the area, so you shouldn't feel pain during the procedure. Some sensitivity afterwards is normal.",
+  },
+  {
+    question: 'How long does a filling take?',
+    answer:
+      'Most fillings can be completed in a single appointment, often within 30 to 60 minutes depending on the size of the filling.',
+  },
+  {
+    question: 'How long do tooth-coloured fillings last?',
+    answer:
+      'This varies from person to person, depending on factors like the size of the filling, your bite, and how well you look after your teeth. Your dentist can give you a better idea based on your individual situation.',
+  },
+  {
+    question: 'What are the alternatives?',
+    answer:
+      "Depending on the extent of the damage, alternatives may include a traditional metal filling, an inlay, onlay, or in some cases a crown. Your dentist will discuss what's suitable for you.",
+  },
+  {
+    question: 'What happens if I delay treatment?',
+    answer:
+      'Left untreated, decay can continue to spread and may lead to more extensive treatment being needed, such as a root canal or extraction.',
+  },
+  {
+    question: 'Will the filling match my other teeth?',
+    answer: 'Yes, the material is chosen to closely match the colour of your natural teeth.',
+  },
+]
+
 function ToothColouredFillings() {
   return (
     <article className="service-page">
@@ -76,46 +110,7 @@ function ToothColouredFillings() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>Does getting a filling hurt?</h3>
-      <p>
-        Local anaesthetic is used to numb the area, so you shouldn't feel
-        pain during the procedure. Some sensitivity afterwards is normal.
-      </p>
-
-      <h3>How long does a filling take?</h3>
-      <p>
-        Most fillings can be completed in a single appointment, often within
-        30 to 60 minutes depending on the size of the filling.
-      </p>
-
-      <h3>How long do tooth-coloured fillings last?</h3>
-      <p>
-        This varies from person to person, depending on factors like the
-        size of the filling, your bite, and how well you look after your
-        teeth. Your dentist can give you a better idea based on your
-        individual situation.
-      </p>
-
-      <h3>What are the alternatives?</h3>
-      <p>
-        Depending on the extent of the damage, alternatives may include a
-        traditional metal filling, an inlay, onlay, or in some cases a
-        crown. Your dentist will discuss what's suitable for you.
-      </p>
-
-      <h3>What happens if I delay treatment?</h3>
-      <p>
-        Left untreated, decay can continue to spread and may lead to more
-        extensive treatment being needed, such as a root canal or
-        extraction.
-      </p>
-
-      <h3>Will the filling match my other teeth?</h3>
-      <p>
-        Yes, the material is chosen to closely match the colour of your
-        natural teeth.
-      </p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

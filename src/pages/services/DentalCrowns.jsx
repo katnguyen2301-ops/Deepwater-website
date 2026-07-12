@@ -1,3 +1,37 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'Does getting a crown hurt?',
+    answer:
+      "Local anaesthetic is used while the tooth is being prepared, so you shouldn't feel pain during the procedure. Mild sensitivity afterwards is common.",
+  },
+  {
+    question: 'How long does the process take?',
+    answer:
+      'It typically involves two visits, a few weeks apart, though some practices offer same-day crowns depending on the technology available.',
+  },
+  {
+    question: 'How long do crowns last?',
+    answer:
+      'This varies depending on the material, your bite, and how well the crown is cared for, so your dentist can give you a better idea based on your situation.',
+  },
+  {
+    question: 'What are the alternatives?',
+    answer:
+      "Depending on the tooth, alternatives may include a filling, inlay, onlay, or veneer. Your dentist will discuss what's suitable for you.",
+  },
+  {
+    question: 'What happens if I delay treatment?',
+    answer:
+      'A weakened tooth left without a crown may continue to wear down or crack further, which can sometimes lead to the tooth being lost.',
+  },
+  {
+    question: 'Will the crown match my other teeth?',
+    answer: 'Yes, crowns are custom-made and shaded to blend in with your natural teeth.',
+  },
+]
+
 function DentalCrowns() {
   return (
     <article className="service-page">
@@ -76,42 +110,7 @@ function DentalCrowns() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>Does getting a crown hurt?</h3>
-      <p>
-        Local anaesthetic is used while the tooth is being prepared, so you
-        shouldn't feel pain during the procedure. Mild sensitivity
-        afterwards is common.
-      </p>
-
-      <h3>How long does the process take?</h3>
-      <p>
-        It typically involves two visits, a few weeks apart, though some
-        practices offer same-day crowns depending on the technology
-        available.
-      </p>
-
-      <h3>How long do crowns last?</h3>
-      <p>
-        This varies depending on the material, your bite, and how well the
-        crown is cared for, so your dentist can give you a better idea based
-        on your situation.
-      </p>
-
-      <h3>What are the alternatives?</h3>
-      <p>
-        Depending on the tooth, alternatives may include a filling, inlay,
-        onlay, or veneer. Your dentist will discuss what's suitable for you.
-      </p>
-
-      <h3>What happens if I delay treatment?</h3>
-      <p>
-        A weakened tooth left without a crown may continue to wear down or
-        crack further, which can sometimes lead to the tooth being lost.
-      </p>
-
-      <h3>Will the crown match my other teeth?</h3>
-      <p>Yes, crowns are custom-made and shaded to blend in with your natural teeth.</p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

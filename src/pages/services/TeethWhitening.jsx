@@ -1,3 +1,38 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'Does teeth whitening hurt?',
+    answer:
+      "Some people experience mild, temporary sensitivity during or after treatment, but it isn't generally painful.",
+  },
+  {
+    question: 'How long does treatment take?',
+    answer:
+      'This depends on the method chosen. In-chair whitening can often be completed in a single visit, while take-home whitening is typically used over one to two weeks.',
+  },
+  {
+    question: 'How long do results last?',
+    answer:
+      'This varies from person to person, depending on diet, lifestyle, and oral hygiene. Touch-up treatments can help maintain your results over time.',
+  },
+  {
+    question: 'What are the alternatives?',
+    answer:
+      "For discolouration that doesn't respond to whitening, options such as veneers or bonding may be considered. Your dentist can discuss these if relevant.",
+  },
+  {
+    question: "What happens if I don't treat staining?",
+    answer:
+      'Staining will generally remain or worsen over time, particularly with ongoing exposure to staining foods, drinks, or smoking.',
+  },
+  {
+    question: 'Is teeth whitening safe?',
+    answer:
+      "Professional whitening carried out under dental supervision is a widely used cosmetic treatment, but it isn't suitable for everyone, which is why an assessment is important beforehand.",
+  },
+]
+
 function TeethWhitening() {
   return (
     <article className="service-page">
@@ -77,46 +112,7 @@ function TeethWhitening() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>Does teeth whitening hurt?</h3>
-      <p>
-        Some people experience mild, temporary sensitivity during or after
-        treatment, but it isn't generally painful.
-      </p>
-
-      <h3>How long does treatment take?</h3>
-      <p>
-        This depends on the method chosen. In-chair whitening can often be
-        completed in a single visit, while take-home whitening is
-        typically used over one to two weeks.
-      </p>
-
-      <h3>How long do results last?</h3>
-      <p>
-        This varies from person to person, depending on diet, lifestyle,
-        and oral hygiene. Touch-up treatments can help maintain your
-        results over time.
-      </p>
-
-      <h3>What are the alternatives?</h3>
-      <p>
-        For discolouration that doesn't respond to whitening, options such
-        as veneers or bonding may be considered. Your dentist can discuss
-        these if relevant.
-      </p>
-
-      <h3>What happens if I don't treat staining?</h3>
-      <p>
-        Staining will generally remain or worsen over time, particularly
-        with ongoing exposure to staining foods, drinks, or smoking.
-      </p>
-
-      <h3>Is teeth whitening safe?</h3>
-      <p>
-        Professional whitening carried out under dental supervision is a
-        widely used cosmetic treatment, but it isn't suitable for everyone,
-        which is why an assessment is important beforehand.
-      </p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>

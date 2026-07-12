@@ -1,3 +1,38 @@
+import FaqAccordion from '../../FaqAccordion'
+
+const faqs = [
+  {
+    question: 'Do all wisdom teeth need to be removed?',
+    answer:
+      "No, not if they're healthy, properly positioned, and not causing problems. Your dentist will let you know if monitoring or removal is more appropriate for you.",
+  },
+  {
+    question: 'Does wisdom teeth removal hurt?',
+    answer:
+      "The procedure itself is done under anaesthetic, so you shouldn't feel pain during it. Some discomfort and swelling afterwards is common and generally settles within a week or so.",
+  },
+  {
+    question: 'How long does recovery take?',
+    answer:
+      'Most people feel back to normal within a week, although complete healing of the gum and bone can take longer.',
+  },
+  {
+    question: "What happens if I don't get a problematic wisdom tooth removed?",
+    answer:
+      'Ongoing issues such as pain, infection, or damage to neighbouring teeth can continue or worsen over time.',
+  },
+  {
+    question: 'At what age are wisdom teeth usually a concern?',
+    answer:
+      'They typically start to come through in the late teens to early twenties, which is often when issues, if any, become apparent.',
+  },
+  {
+    question: 'Will I be referred elsewhere for removal?',
+    answer:
+      'This depends on the complexity of your case. Straightforward extractions may be carried out at the practice, while more complex cases may be referred for specialist care.',
+  },
+]
+
 function WisdomTeeth() {
   return (
     <article className="service-page">
@@ -76,45 +111,7 @@ function WisdomTeeth() {
       </p>
 
       <h2>Frequently Asked Questions</h2>
-
-      <h3>Do all wisdom teeth need to be removed?</h3>
-      <p>
-        No, not if they're healthy, properly positioned, and not causing
-        problems. Your dentist will let you know if monitoring or removal is
-        more appropriate for you.
-      </p>
-
-      <h3>Does wisdom teeth removal hurt?</h3>
-      <p>
-        The procedure itself is done under anaesthetic, so you shouldn't
-        feel pain during it. Some discomfort and swelling afterwards is
-        common and generally settles within a week or so.
-      </p>
-
-      <h3>How long does recovery take?</h3>
-      <p>
-        Most people feel back to normal within a week, although complete
-        healing of the gum and bone can take longer.
-      </p>
-
-      <h3>What happens if I don't get a problematic wisdom tooth removed?</h3>
-      <p>
-        Ongoing issues such as pain, infection, or damage to neighbouring
-        teeth can continue or worsen over time.
-      </p>
-
-      <h3>At what age are wisdom teeth usually a concern?</h3>
-      <p>
-        They typically start to come through in the late teens to early
-        twenties, which is often when issues, if any, become apparent.
-      </p>
-
-      <h3>Will I be referred elsewhere for removal?</h3>
-      <p>
-        This depends on the complexity of your case. Straightforward
-        extractions may be carried out at the practice, while more complex
-        cases may be referred for specialist care.
-      </p>
+      <FaqAccordion items={faqs} />
 
       <h2>Why Choose Our Practice?</h2>
       <p>
