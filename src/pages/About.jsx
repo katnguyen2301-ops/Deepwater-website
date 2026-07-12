@@ -1,32 +1,18 @@
-import { Navigate, NavLink, Route, Routes } from 'react-router-dom'
-import dentists from '../data/dentists'
-
-function TeamList() {
-  return (
-    <div className="team-list">
-      {dentists.map((dentist) => (
-        <article key={dentist.slug} className="dentist-card">
-          <h3>{dentist.name}</h3>
-          {dentist.bio.map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
-          ))}
-        </article>
-      ))}
-    </div>
-  )
-}
+import { Navigate, Route, Routes } from 'react-router-dom'
+import WelcomeToThePractice from './about/WelcomeToThePractice'
+import OurPhilosophy from './about/OurPhilosophy'
+import MeetTheTeam from './about/MeetTheTeam'
+import OurPractice from './about/OurPractice'
 
 function About() {
   return (
     <section className="about">
-      <nav className="subtabs">
-        <NavLink to="/about/team" end>
-          Meet Our Team
-        </NavLink>
-      </nav>
       <Routes>
-        <Route index element={<Navigate to="team" replace />} />
-        <Route path="team" element={<TeamList />} />
+        <Route index element={<Navigate to="welcome-to-the-practice" replace />} />
+        <Route path="welcome-to-the-practice" element={<WelcomeToThePractice />} />
+        <Route path="our-philosophy" element={<OurPhilosophy />} />
+        <Route path="meet-the-team" element={<MeetTheTeam />} />
+        <Route path="our-practice" element={<OurPractice />} />
       </Routes>
     </section>
   )
