@@ -1,4 +1,5 @@
 import timothyHoPhoto from '../assets/dr-timothy-ho.png'
+import katherineNguyenPhoto from '../assets/dr-katherine-nguyen.jpg'
 
 const dentists = [
   {
@@ -13,10 +14,11 @@ const dentists = [
   {
     slug: 'dr-katherine-nguyen',
     name: 'Dr. Katherine Nguyen BDHS MDent (Griffith)',
+    photo: katherineNguyenPhoto,
     bio: [
       "We are delighted to welcome Dr Katherine Nguyen as the newest member of our dental team!",
       "Dr Katherine Nguyen is a graduate dentist who completed her studies at Griffith University on the Gold Coast, graduating with Distinction. She has a strong passion for family dentistry and cosmetic dentistry, and is dedicated to helping patients of all ages achieve healthy, confident smiles through gentle, personalised care.",
-      "With a genuine love for Sydney, Katherine is excited to build long-lasting relationships with her patients and is committed to delivering exceptional care in a warm and supportive environment. She believes in listening closely to her patients' needs and creating treatment plans that are both comfortable and effective.",
+      "Katherine is excited to build long-lasting relationships with her patients and is committed to delivering exceptional care in a warm and supportive environment. She believes in listening closely to her patients' needs and creating treatment plans that are both comfortable and effective.",
       "Outside the clinic, Katherine is a self-proclaimed foodie with a keen eye for the latest trendy dining spots, so don't hesitate to share your favourite restaurant recommendations with her! She also enjoys keeping active and unwinding by watching sports, especially soccer, tennis, and Formula 1.",
       "Dr Katherine Nguyen looks forward to welcoming you and your family to the practice and helping you smile with confidence.",
     ],

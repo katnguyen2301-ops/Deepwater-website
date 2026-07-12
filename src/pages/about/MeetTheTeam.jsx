@@ -15,10 +15,12 @@ function MeetTheTeam() {
             {dentist.photo && (
               <img className="dentist-photo" src={dentist.photo} alt={dentist.name} />
             )}
-            <h3>{dentist.name}</h3>
-            {dentist.bio.map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
-            ))}
+            <div className="dentist-card-body">
+              <h3>{dentist.name}</h3>
+              {dentist.bio.map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+              ))}
+            </div>
           </article>
         ))}
       </div>

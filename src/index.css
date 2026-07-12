@@ -266,17 +266,35 @@ body {
 }
 
 .dentist-card {
+  display: flex;
+  gap: 20px;
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 20px;
 }
 
 .dentist-photo {
-  width: 120px;
-  height: 120px;
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.dentist-card-body {
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .dentist-card {
+    flex-direction: column;
+  }
+
+  .dentist-photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
 }
 
 .dentist-card h3 {
