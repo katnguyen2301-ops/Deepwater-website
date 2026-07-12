@@ -334,8 +334,19 @@ body {
 }
 
 .service-page h1 {
-  font-size: 36px;
-  margin: 0 0 16px;
+  font-size: 52px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin: 0 0 24px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .service-page h1 {
+    font-size: 36px;
+  }
 }
 
 .service-page h2 {
