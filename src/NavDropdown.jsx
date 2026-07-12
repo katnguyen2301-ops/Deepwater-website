@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
-function NavDropdown({ label, basePath, items }) {
+function NavDropdown({ label, basePath, items, onNavigate }) {
   const [open, setOpen] = useState(false)
   const ref = useRef(null)
 
@@ -29,7 +29,13 @@ function NavDropdown({ label, basePath, items }) {
         <ul className="navbar-dropdown-menu">
           {items.map((item) => (
             <li key={item.path}>
-              <NavLink to={`${basePath}/${item.path}`} onClick={() => setOpen(false)}>
+              <NavLink
+                to={`${basePath}/${item.path}`}
+                onClick={() => {
+                  setOpen(false)
+                  onNavigate?.()
+                }}
+              >
                 {item.label}
               </NavLink>
             </li>

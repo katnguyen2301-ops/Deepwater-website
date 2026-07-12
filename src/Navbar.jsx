@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import NavDropdown from './NavDropdown'
 import services from './data/services'
@@ -7,25 +8,41 @@ import logo from './assets/deepwater-logo.png'
 
 function Navbar() {
   const practice = locations.find((location) => location.slug === 'deepwater-dental-cosmetics')
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <nav className="navbar">
-      <Link to="/" className="navbar-brand">
+      <Link to="/" className="navbar-brand" onClick={() => setMenuOpen(false)}>
         <img src={logo} alt="Deepwater Dental & Implant Centre" />
       </Link>
-      <ul className="navbar-links">
-        <li><NavLink to="/" end>Home</NavLink></li>
-        <NavDropdown label="About" basePath="/about" items={aboutPages} />
-        <NavDropdown label="Services" basePath="/services" items={services} />
-        <li><NavLink to="/contact">Contact</NavLink></li>
-      </ul>
-      <div className="navbar-actions">
-        <a className="btn btn-call" href={`tel:${practice.phone.replace(/\s+/g, '')}`}>
-          Call Now
-        </a>
-        <NavLink className="btn btn-book" to="/contact">
-          Book Appointment
-        </NavLink>
+
+      <button
+        type="button"
+        className="navbar-toggle"
+        aria-label="Toggle menu"
+        aria-expanded={menuOpen}
+        onClick={() => setMenuOpen((prev) => !prev)}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+
+      <div className={menuOpen ? 'navbar-menu navbar-menu-open' : 'navbar-menu'}>
+        <ul className="navbar-links">
+          <li><NavLink to="/" end onClick={() => setMenuOpen(false)}>Home</NavLink></li>
+          <NavDropdown label="About" basePath="/about" items={aboutPages} onNavigate={() => setMenuOpen(false)} />
+          <NavDropdown label="Services" basePath="/services" items={services} onNavigate={() => setMenuOpen(false)} />
+          <li><NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink></li>
+        </ul>
+        <div className="navbar-actions">
+          <a className="btn btn-call" href={`tel:${practice.phone.replace(/\s+/g, '')}`}>
+            Call Now
+          </a>
+          <NavLink className="btn btn-book" to="/contact" onClick={() => setMenuOpen(false)}>
+            Book Appointment
+          </NavLink>
+        </div>
       </div>
     </nav>
   )

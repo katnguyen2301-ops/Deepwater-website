@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --text: #3f6b64;
   --text-h: #0f766e;
@@ -66,10 +72,40 @@ body {
 .navbar-brand {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .navbar-brand img {
   height: 40px;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #0f766e;
+  margin: 0 auto;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .navbar-links {
@@ -179,6 +215,72 @@ body {
 
 .navbar-dropdown-menu a.active {
   color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    padding: 16px 24px 24px;
+  }
+
+  .navbar-menu-open {
+    display: flex;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .navbar-links li {
+    width: 100%;
+  }
+
+  .navbar-links a,
+  .navbar-dropdown-trigger {
+    display: block;
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  .navbar-dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0 0 0 16px;
+    background: none;
+  }
+
+  .navbar-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .navbar-actions .btn {
+    width: 100%;
+  }
 }
 
 .subtabs {
@@ -654,6 +756,7 @@ body {
   position: relative;
   z-index: 1;
   flex-shrink: 0;
+  box-sizing: border-box;
   width: 300px;
   padding: 24px;
   background: #0f766e;
