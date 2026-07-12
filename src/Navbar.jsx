@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import services from './data/services'
+import locations from './data/locations'
 
 function ServicesDropdown() {
   const [open, setOpen] = useState(false)
@@ -45,6 +46,8 @@ function ServicesDropdown() {
 }
 
 function Navbar() {
+  const practice = locations[0]
+
   return (
     <nav className="navbar">
       <span className="navbar-brand">Deepwater</span>
@@ -54,6 +57,14 @@ function Navbar() {
         <ServicesDropdown />
         <li><NavLink to="/contact">Contact</NavLink></li>
       </ul>
+      <div className="navbar-actions">
+        <a className="btn btn-call" href={`tel:${practice.phone.replace(/\s+/g, '')}`}>
+          Call Now
+        </a>
+        <NavLink className="btn btn-book" to="/contact">
+          Book Appointment
+        </NavLink>
+      </div>
     </nav>
   )
 }
