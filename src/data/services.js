@@ -7,6 +7,10 @@ const services = [
   { path: 'dental-crowns', label: 'Dental Crowns' },
   { path: 'dental-bridges', label: 'Dental Bridges' },
   { path: 'dental-implants', label: 'Dental Implants' },
+  { path: 'dentures', label: 'Dentures' },
+  { path: 'tooth-extractions', label: 'Tooth Extractions' },
+  { path: 'wisdom-teeth', label: 'Wisdom Teeth' },
+  { path: 'gum-disease-treatment', label: 'Gum Disease Treatment' },
 ]
 
 export default services

@@ -7,6 +7,10 @@ import RootCanalTreatment from './services/RootCanalTreatment'
 import DentalCrowns from './services/DentalCrowns'
 import DentalBridges from './services/DentalBridges'
 import DentalImplants from './services/DentalImplants'
+import Dentures from './services/Dentures'
+import ToothExtractions from './services/ToothExtractions'
+import WisdomTeeth from './services/WisdomTeeth'
+import GumDiseaseTreatment from './services/GumDiseaseTreatment'
 
 function Services() {
   return (
@@ -47,6 +51,22 @@ function Services() {
         <Route
           path="dental-implants"
           element={<DentalImplants />}
+        />
+        <Route
+          path="dentures"
+          element={<Dentures />}
+        />
+        <Route
+          path="tooth-extractions"
+          element={<ToothExtractions />}
+        />
+        <Route
+          path="wisdom-teeth"
+          element={<WisdomTeeth />}
+        />
+        <Route
+          path="gum-disease-treatment"
+          element={<GumDiseaseTreatment />}
         />
       </Routes>
     </section>
