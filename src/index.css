@@ -134,6 +134,42 @@ body {
   margin-bottom: 0;
 }
 
+.service-page {
+  text-align: left;
+  padding: 24px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.service-page h1 {
+  font-size: 36px;
+  margin: 0 0 16px;
+}
+
+.service-page h2 {
+  margin-top: 32px;
+}
+
+.service-page h3 {
+  color: var(--text-h);
+  font-family: var(--heading);
+  font-weight: 500;
+  margin: 20px 0 4px;
+}
+
+.service-page p {
+  margin: 0 0 16px;
+}
+
+.service-page ul {
+  margin: 0 0 16px;
+  padding-left: 20px;
+}
+
+.service-page li {
+  margin-bottom: 8px;
+}
+
 #root {
   width: 1126px;
   max-width: 100%;
