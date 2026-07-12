@@ -221,6 +221,78 @@ body {
   margin-bottom: 8px;
 }
 
+.contact {
+  padding: 24px;
+  text-align: left;
+}
+
+.contact h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.location-card {
+  border-radius: 8px;
+  padding: 24px;
+  color: #fff;
+}
+
+.location-card-0 {
+  background: #1f2937;
+}
+
+.location-card-1 {
+  background: #c2255c;
+}
+
+.location-card-2 {
+  background: #a3c15e;
+}
+
+.location-card h2 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.location-card p {
+  margin: 0 0 8px;
+}
+
+.location-card a {
+  color: #fff;
+}
+
+.location-hours {
+  margin-top: 16px;
+}
+
+.location-hours ul {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.location-hours li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 4px 0;
+}
+
+.location-map-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 #root {
   width: 1126px;
   max-width: 100%;

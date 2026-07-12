@@ -52,7 +52,7 @@ function Navbar() {
         <li><NavLink to="/" end>Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
         <ServicesDropdown />
-        <li><a href="#contact">Contact</a></li>
+        <li><NavLink to="/contact">Contact</NavLink></li>
       </ul>
     </nav>
   )
