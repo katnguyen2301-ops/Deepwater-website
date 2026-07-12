@@ -1,6 +1,8 @@
 import { Navigate, NavLink, Route, Routes } from 'react-router-dom'
 import CheckupsPreventiveCare from './services/CheckupsPreventiveCare'
 import ChildrensDentistry from './services/ChildrensDentistry'
+import EmergencyDentistry from './services/EmergencyDentistry'
+import ToothColouredFillings from './services/ToothColouredFillings'
 
 function Services() {
   return (
@@ -11,6 +13,12 @@ function Services() {
         </NavLink>
         <NavLink to="/services/childrens-dentistry">
           Children's Dentistry
+        </NavLink>
+        <NavLink to="/services/emergency-dentistry">
+          Emergency Dentistry
+        </NavLink>
+        <NavLink to="/services/tooth-coloured-fillings">
+          Tooth-Coloured Fillings
         </NavLink>
       </nav>
       <Routes>
@@ -25,6 +33,14 @@ function Services() {
         <Route
           path="childrens-dentistry"
           element={<ChildrensDentistry />}
+        />
+        <Route
+          path="emergency-dentistry"
+          element={<EmergencyDentistry />}
+        />
+        <Route
+          path="tooth-coloured-fillings"
+          element={<ToothColouredFillings />}
         />
       </Routes>
     </section>
