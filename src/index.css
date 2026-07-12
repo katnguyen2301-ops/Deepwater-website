@@ -546,6 +546,100 @@ body {
   color: #b8b8b8;
 }
 
+.services-carousel {
+  padding: 56px 24px;
+  text-align: center;
+}
+
+.services-carousel h2 {
+  font-size: 32px;
+}
+
+.services-carousel-subtitle {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: var(--text);
+}
+
+.services-carousel-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.services-carousel-arrow {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.services-carousel-arrow:hover {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+
+.services-carousel-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 8px 4px 16px;
+}
+
+.service-tile {
+  flex: 0 0 240px;
+  scroll-snap-align: start;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-tile-image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 120px 120px 12px 12px;
+  margin-bottom: 16px;
+}
+
+.service-tile-image-0 {
+  background: linear-gradient(160deg, var(--accent-bg), var(--accent-border));
+}
+
+.service-tile-image-1 {
+  background: linear-gradient(160deg, #f4f3ec, #d9c9a3);
+}
+
+.service-tile-image-2 {
+  background: linear-gradient(160deg, #e5e4e7, #9ca3af);
+}
+
+.service-tile-image-3 {
+  background: linear-gradient(160deg, var(--accent-bg), #c084fc);
+}
+
+.service-tile h3 {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.service-tile p {
+  font-size: 14px;
+  color: var(--text);
+  margin: 0;
+}
+
+.services-carousel-cta {
+  margin-top: 40px;
+}
+
 #root {
   width: 100%;
   text-align: center;
