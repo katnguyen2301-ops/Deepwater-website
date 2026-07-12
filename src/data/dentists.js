@@ -5,6 +5,7 @@ const dentists = [
   {
     slug: 'dr-timothy-ho',
     name: 'Dr Timothy Ho',
+    title: 'Principal Dentist',
     photo: timothyHoPhoto,
     bio: [
       "Dr Ho graduated from The University of Western Australia in 1994 and has since built an exceptional patient base. Dr Ho is a kind, caring and friendly dentist who excels in providing his patients extensive knowledge and treatment in all aspects of dentistry. He has a special interest in dental implants with over 25 years of experience.",
@@ -14,6 +15,7 @@ const dentists = [
   {
     slug: 'dr-katherine-nguyen',
     name: 'Dr. Katherine Nguyen BDHS MDent (Griffith)',
+    title: 'Dentist',
     photo: katherineNguyenPhoto,
     bio: [
       "We are delighted to welcome Dr Katherine Nguyen as the newest member of our dental team!",

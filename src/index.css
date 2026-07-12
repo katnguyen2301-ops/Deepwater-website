@@ -640,6 +640,152 @@ body {
   margin-top: 40px;
 }
 
+.team-carousel {
+  padding: 56px 24px;
+  background: #1c1c1c;
+  color: #f2f2f2;
+}
+
+.team-carousel-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+.team-carousel-header h2 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.team-carousel-header p {
+  max-width: 460px;
+  margin-left: auto;
+  color: #c9c9c9;
+  font-size: 15px;
+}
+
+.team-carousel-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.team-carousel-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 8px 4px 16px;
+}
+
+.team-tile {
+  flex: 0 0 220px;
+  scroll-snap-align: start;
+  text-align: left;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.team-tile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 110px 110px 0 0;
+}
+
+.team-tile-body {
+  padding: 16px;
+}
+
+.team-tile-body h3 {
+  font-size: 17px;
+  margin: 0 0 4px;
+  color: var(--text-h);
+}
+
+.team-tile-title {
+  margin: 0 0 12px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.team-tile-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.team-tile-link:hover {
+  text-decoration: underline;
+}
+
+.home-faq {
+  padding: 56px 24px 72px;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-faq h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.home-faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.home-faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  padding: 20px 0;
+  font: inherit;
+  font-size: 18px;
+  color: var(--text-h);
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.home-faq-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--accent-border);
+  border-radius: 50%;
+  color: var(--accent);
+  transition: transform 0.2s ease;
+}
+
+.home-faq-question[aria-expanded='true'] .home-faq-icon {
+  transform: rotate(180deg);
+}
+
+.home-faq-answer {
+  margin: 0;
+  padding: 0 46px 20px 0;
+  color: var(--text);
+}
+
 #root {
   width: 100%;
   text-align: center;
