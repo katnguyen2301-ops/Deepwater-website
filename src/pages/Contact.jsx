@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import locations from '../data/locations'
+import GetInTouchForm from '../GetInTouchForm'
 
 function Contact() {
   return (
@@ -36,6 +37,8 @@ function Contact() {
           </article>
         ))}
       </div>
+
+      <GetInTouchForm />
     </section>
   )
 }

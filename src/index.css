@@ -478,6 +478,85 @@ body {
   color: var(--accent);
 }
 
+.get-in-touch {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 24px 72px;
+  text-align: left;
+}
+
+.get-in-touch h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.get-in-touch > p {
+  color: var(--text);
+  margin-bottom: 32px;
+}
+
+.get-in-touch-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.get-in-touch-row {
+  display: flex;
+  gap: 24px;
+}
+
+.get-in-touch-row .get-in-touch-field {
+  flex: 1;
+}
+
+.get-in-touch-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+.get-in-touch-field input,
+.get-in-touch-field textarea {
+  font: inherit;
+  padding: 8px 0;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  background: none;
+  color: var(--text-h);
+  resize: vertical;
+}
+
+.get-in-touch-field input:focus,
+.get-in-touch-field textarea:focus {
+  outline: none;
+  border-bottom-color: var(--accent);
+}
+
+.get-in-touch-submit {
+  padding: 14px;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.get-in-touch-submit:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+  .get-in-touch-row {
+    flex-direction: column;
+  }
+}
+
 .location-detail-hero {
   padding: 72px 24px 48px;
   background: #0b2e45;
