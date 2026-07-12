@@ -59,6 +59,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
+  background: #fff;
   border-bottom: 1px solid var(--border);
 }
 
@@ -80,7 +81,7 @@ body {
 }
 
 .navbar-links a {
-  color: var(--text);
+  color: #0b2e45;
   text-decoration: none;
 }
 
@@ -112,8 +113,8 @@ body {
 }
 
 .btn-call {
-  background: var(--text-h);
-  color: var(--bg);
+  background: #0b2e45;
+  color: #fff;
 }
 
 .btn-call:hover {
@@ -135,7 +136,7 @@ body {
 
 .navbar-dropdown-trigger {
   font: inherit;
-  color: var(--text);
+  color: #0b2e45;
   background: none;
   border: none;
   padding: 0;
