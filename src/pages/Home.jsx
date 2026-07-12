@@ -5,7 +5,7 @@ import HomeFaq from '../HomeFaq'
 function Home() {
   return (
     <>
-      <h1>Hello World</h1>
+      <h1>Caring for Smiles in the Central Coast for over 30 years</h1>
       <ServicesCarousel />
       <TeamCarousel />
       <HomeFaq />

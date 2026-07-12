@@ -207,8 +207,19 @@ body {
 }
 
 .about-page h1 {
-  font-size: 36px;
-  margin: 0 0 16px;
+  font-size: 52px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin: 0 0 24px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .about-page h1 {
+    font-size: 36px;
+  }
 }
 
 .about-page p {
@@ -803,6 +814,30 @@ body {
   height: 18px;
 }
 
+.footer-credits {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #7fa8c2;
+}
+
+.footer-credits summary {
+  cursor: pointer;
+  color: #9db9c9;
+}
+
+.footer-credits ul {
+  margin: 12px 0 0;
+  padding-left: 18px;
+}
+
+.footer-credits li {
+  margin-bottom: 6px;
+}
+
+.footer-credits a {
+  color: #9db9c9;
+}
+
 .services-carousel {
   padding: 56px 24px;
   text-align: center;
@@ -860,10 +895,12 @@ body {
 }
 
 .service-tile-image {
+  display: block;
   width: 100%;
   aspect-ratio: 3 / 4;
   border-radius: 120px 120px 12px 12px;
   margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .service-tile-image-0 {
