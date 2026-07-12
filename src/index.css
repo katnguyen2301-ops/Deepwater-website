@@ -199,14 +199,6 @@ body {
   border-bottom: 2px solid var(--accent);
 }
 
-.team-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 16px;
-  text-align: left;
-}
-
 .about-page {
   text-align: left;
   padding: 24px;
@@ -269,49 +261,58 @@ body {
   font-style: italic;
 }
 
-.dentist-card {
-  display: flex;
-  gap: 20px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 20px;
+.meet-team-page {
+  max-width: 1040px;
 }
 
-.dentist-photo {
+.team-profile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  margin-top: 32px;
+}
+
+.team-profile {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.team-profile-photo {
   flex-shrink: 0;
-  width: 160px;
-  height: 160px;
+  width: 360px;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   border-radius: 8px;
 }
 
-.dentist-card-body {
+.team-profile-body {
   min-width: 0;
 }
 
-@media (max-width: 600px) {
-  .dentist-card {
+.team-profile-body h2 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.team-profile-credentials {
+  font-style: italic;
+  color: var(--text);
+  margin: 0 0 16px;
+}
+
+.team-profile-body p {
+  margin: 0 0 16px;
+}
+
+@media (max-width: 720px) {
+  .team-profile {
     flex-direction: column;
   }
 
-  .dentist-photo {
+  .team-profile-photo {
     width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
   }
-}
-
-.dentist-card h3 {
-  margin: 0 0 12px;
-  color: var(--text-h);
-}
-
-.dentist-card p {
-  margin: 0 0 12px;
-}
-
-.dentist-card p:last-child {
-  margin-bottom: 0;
 }
 
 .service-page {
@@ -676,30 +677,33 @@ body {
   font-size: 15px;
 }
 
-.team-carousel-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 280px));
+  justify-content: space-evenly;
+  gap: 40px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.team-carousel-track {
-  display: flex;
-  gap: 24px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  padding: 8px 4px 16px;
+.team-tile {
+  text-align: center;
 }
 
-.team-tile {
-  flex: 0 0 220px;
-  scroll-snap-align: start;
-  text-align: left;
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
+.team-tile-heading {
+  margin-bottom: 16px;
+}
+
+.team-tile-heading h3 {
+  font-size: 20px;
+  margin: 0 0 4px;
+  color: #fff;
+}
+
+.team-tile-title {
+  margin: 0;
+  font-size: 14px;
+  color: #9db9c9;
 }
 
 .team-tile-photo {
@@ -707,23 +711,8 @@ body {
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  border-radius: 110px 110px 0 0;
-}
-
-.team-tile-body {
-  padding: 16px;
-}
-
-.team-tile-body h3 {
-  font-size: 17px;
-  margin: 0 0 4px;
-  color: var(--text-h);
-}
-
-.team-tile-title {
-  margin: 0 0 12px;
-  font-size: 13px;
-  color: var(--text);
+  border-radius: 12px;
+  margin-bottom: 16px;
 }
 
 .team-tile-link {

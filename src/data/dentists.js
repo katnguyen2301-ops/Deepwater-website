@@ -14,7 +14,8 @@ const dentists = [
   },
   {
     slug: 'dr-katherine-nguyen',
-    name: 'Dr. Katherine Nguyen BDHS MDent (Griffith)',
+    name: 'Dr Katherine Nguyen',
+    credentials: 'BDHS, MDent (Griffith)',
     title: 'Dentist',
     photo: katherineNguyenPhoto,
     bio: [
