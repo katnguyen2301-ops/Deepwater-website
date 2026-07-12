@@ -1,42 +1,38 @@
+import { Link } from 'react-router-dom'
 import locations from '../data/locations'
 
 function Contact() {
   return (
     <section className="contact">
-      <h1>Contact Us</h1>
-      <div className="location-grid">
-        {locations.map((location, i) => (
-          <article key={location.slug} className={`location-card location-card-${i % 3}`}>
-            <h2>{location.name}</h2>
-            <p>
-              <strong>Phone:</strong>{' '}
-              <a href={`tel:${location.phone.replace(/\s+/g, '')}`}>{location.phone}</a>
-            </p>
-            <p>
-              <strong>Email:</strong> <a href={`mailto:${location.email}`}>{location.email}</a>
-            </p>
-            <p>
-              <strong>Address:</strong> {location.address}
-            </p>
-            <div className="location-hours">
-              <strong>Business Hours:</strong>
-              <ul>
-                {location.hours.map((entry) => (
-                  <li key={entry.day}>
-                    <span>{entry.day}</span>
-                    <span>{entry.time}</span>
-                  </li>
-                ))}
-              </ul>
+      <div className="contact-hero">
+        <h1>Our Locations</h1>
+        <p>
+          Explore our locations across the Woy Woy and Umina Beach area,
+          where thorough dental care meets a warm, welcoming environment.
+        </p>
+      </div>
+
+      <div className="location-list">
+        {locations.map((location) => (
+          <article key={location.slug} className="location-list-card">
+            <div className="location-list-photo" aria-hidden="true">
+              <span>{location.name}</span>
             </div>
-            <a
-              className="location-map-link"
-              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              View on map
-            </a>
+            <div className="location-list-body">
+              <h2>{location.name}</h2>
+              <p>{location.address}</p>
+              <div className="location-list-actions">
+                <Link to={`/contact/${location.slug}`} className="btn btn-outline">
+                  Find out more
+                </Link>
+                <a
+                  className="btn btn-book"
+                  href={`tel:${location.phone.replace(/\s+/g, '')}`}
+                >
+                  Book Online →
+                </a>
+              </div>
+            </div>
           </article>
         ))}
       </div>
