@@ -775,10 +775,36 @@ body {
 }
 
 .footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   padding-top: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 14px;
   color: #9db9c9;
+}
+
+.footer-social-links {
+  margin-top: 0;
+}
+
+.footer-social-links a {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #bcdcee;
+}
+
+.footer-social-links a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.footer-social-links svg {
+  width: 18px;
+  height: 18px;
 }
 
 .services-carousel {

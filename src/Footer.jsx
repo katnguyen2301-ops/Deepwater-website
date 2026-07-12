@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import services from './data/services'
 import locations from './data/locations'
 import logo from './assets/deepwater-logo.png'
+import SocialLinks from './SocialLinks'
 
 const suburbs = [
   'Woy Woy',
@@ -85,6 +86,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <span>All Rights Reserved by Deepwater Dental &amp; Cosmetics</span>
+        <SocialLinks className="footer-social-links" />
       </div>
     </footer>
   )
