@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import services from './data/services'
+import serviceImages from './data/serviceImages'
 
 function ServicesCarousel() {
   const trackRef = useRef(null)
@@ -38,7 +39,18 @@ function ServicesCarousel() {
               to={`/services/${service.path}`}
               className="service-tile"
             >
-              <div className={`service-tile-image service-tile-image-${i % 4}`} aria-hidden="true" />
+              {serviceImages[service.path] ? (
+                <img
+                  className="service-tile-image"
+                  src={serviceImages[service.path]}
+                  alt=""
+                />
+              ) : (
+                <div
+                  className={`service-tile-image service-tile-image-${i % 4}`}
+                  aria-hidden="true"
+                />
+              )}
               <h3>{service.label}</h3>
               <p>{service.blurb}</p>
             </Link>

@@ -3,6 +3,7 @@ import services from './data/services'
 import locations from './data/locations'
 import logo from './assets/deepwater-logo.png'
 import SocialLinks from './SocialLinks'
+import imageCredits from './data/imageCredits'
 
 const suburbs = [
   'Woy Woy',
@@ -88,6 +89,21 @@ function Footer() {
         <span>All Rights Reserved by Deepwater Dental &amp; Cosmetics</span>
         <SocialLinks className="footer-social-links" />
       </div>
+
+      <details className="footer-credits">
+        <summary>Photo credits</summary>
+        <ul>
+          {imageCredits.map((credit) => (
+            <li key={credit.source}>
+              &ldquo;{credit.title}&rdquo; by {credit.author}, licensed under{' '}
+              {credit.license}.{' '}
+              <a href={credit.source} target="_blank" rel="noreferrer">
+                Source
+              </a>
+            </li>
+          ))}
+        </ul>
+      </details>
     </footer>
   )
 }
