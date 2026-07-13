@@ -1,8 +1,17 @@
+import reception from '../../assets/practice/reception.jpg'
+import waitingArea1 from '../../assets/practice/waiting-area-1.jpg'
+import waitingArea2 from '../../assets/practice/waiting-area-2.jpg'
+import treatmentRoom1 from '../../assets/practice/treatment-room-1.jpg'
+import treatmentRoom2 from '../../assets/practice/treatment-room-2.jpg'
+import xrayRoom from '../../assets/practice/xray-room.jpg'
+
 const practicePhotos = [
-  'Reception',
-  'Waiting Area',
-  'Treatment Room',
-  'Sterilisation Room',
+  { label: 'Reception', src: reception },
+  { label: 'Waiting Area', src: waitingArea1 },
+  { label: 'Waiting Area', src: waitingArea2 },
+  { label: 'Treatment Room', src: treatmentRoom1 },
+  { label: 'Treatment Room', src: treatmentRoom2 },
+  { label: 'X-Ray Room', src: xrayRoom },
 ]
 
 function OurPractice() {
@@ -15,15 +24,15 @@ function OurPractice() {
         considered care.
       </p>
       <div className="practice-gallery">
-        {practicePhotos.map((label) => (
-          <div key={label} className="practice-photo-placeholder">
-            <span>{label}</span>
-          </div>
+        {practicePhotos.map(({ label, src }, i) => (
+          <img
+            key={label + i}
+            className="practice-photo"
+            src={src}
+            alt={label}
+          />
         ))}
       </div>
-      <p className="practice-gallery-note">
-        Photos coming soon.
-      </p>
     </section>
   )
 }
