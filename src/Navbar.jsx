@@ -39,9 +39,15 @@ function Navbar() {
           <a className="btn btn-call" href={`tel:${practice.phone.replace(/\s+/g, '')}`}>
             Call Now
           </a>
-          <NavLink className="btn btn-book" to="/contact" onClick={() => setMenuOpen(false)}>
+          <a
+            className="btn btn-book"
+            href={practice.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMenuOpen(false)}
+          >
             Book Appointment
-          </NavLink>
+          </a>
         </div>
       </div>
     </nav>

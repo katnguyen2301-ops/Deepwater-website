@@ -6,6 +6,8 @@ const locations = [
     phone: '(02) 4341 3000',
     email: 'woywoydc@gmail.com',
     address: '36 George St, Woy Woy NSW 2256',
+    bookingUrl:
+      'https://www.hotdoc.com.au/medical-centres/woy-woy-NSW-2256/deepwater-dental-cosmetics/doctors',
     streetViewEmbed:
       'https://www.google.com/maps/embed?pb=!4v1783858449532!6m8!1m7!1sBuROnZ-wTuEpfJUW51pimA!2m2!1d-33.48838755016843!2d151.324726243524!3f56.003063!4f0!5f0.7820865974627469',
     hours: [
