@@ -20,7 +20,9 @@ function TeamCarousel() {
               <h3>{dentist.name}</h3>
               <p className="team-tile-title">{dentist.title}</p>
             </div>
-            <img className="team-tile-photo" src={dentist.photo} alt={dentist.name} />
+            <Link to="/about/meet-the-team" className="team-tile-photo-link">
+              <img className="team-tile-photo" src={dentist.photo} alt={dentist.name} />
+            </Link>
             <Link to="/about/meet-the-team" className="team-tile-link">
               Learn more ↗
             </Link>
