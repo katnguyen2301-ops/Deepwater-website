@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import services from './data/services'
 import locations from './data/locations'
-import logo from './assets/deepwater-logo.png'
 import SocialLinks from './SocialLinks'
 import imageCredits from './data/imageCredits'
 
@@ -24,8 +23,6 @@ function Footer() {
 
   return (
     <footer className="site-footer">
-      <img className="footer-logo" src={logo} alt="Deepwater Dental & Implant Centre" />
-
       <p className="footer-disclaimer">
         Patient images, if shown, are published with consent and are
         intended for educational purposes only. Results vary between
