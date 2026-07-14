@@ -11,7 +11,7 @@ function MeetTheTeam() {
       </p>
       <div className="team-profile-list">
         {dentists.map((dentist) => (
-          <article key={dentist.slug} className="team-profile">
+          <article key={dentist.slug} id={dentist.slug} className="team-profile">
             {dentist.photo && (
               <img className="team-profile-photo" src={dentist.photo} alt={dentist.name} />
             )}

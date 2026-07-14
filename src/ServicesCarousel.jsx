@@ -1,11 +1,12 @@
 import { useRef } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import services from './data/services'
 import serviceImages from './data/serviceImages'
 import locations from './data/locations'
 
 function ServicesCarousel() {
   const trackRef = useRef(null)
+  const navigate = useNavigate()
   const practice = locations.find((location) => location.slug === 'deepwater-dental-cosmetics')
 
   function scrollByCard(direction) {
@@ -14,6 +15,12 @@ function ServicesCarousel() {
     const card = track.querySelector('.service-tile')
     const amount = card ? card.getBoundingClientRect().width + 24 : 300
     track.scrollBy({ left: direction * amount, behavior: 'smooth' })
+  }
+
+  function handleTileClick(event, path) {
+    if (!document.startViewTransition) return
+    event.preventDefault()
+    document.startViewTransition(() => navigate(`/services/${path}`))
   }
 
   return (
@@ -40,12 +47,14 @@ function ServicesCarousel() {
               key={service.path}
               to={`/services/${service.path}`}
               className="service-tile"
+              onClick={(event) => handleTileClick(event, service.path)}
             >
               {serviceImages[service.path] ? (
                 <img
                   className="service-tile-image"
                   src={serviceImages[service.path]}
                   alt=""
+                  style={{ viewTransitionName: `service-image-${service.path}` }}
                 />
               ) : (
                 <div

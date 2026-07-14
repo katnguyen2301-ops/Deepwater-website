@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+::view-transition-group(*) {
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 :root {
   --text: #3f6b64;
   --text-h: #0f766e;
@@ -397,6 +402,7 @@ body {
   display: flex;
   gap: 48px;
   align-items: flex-start;
+  scroll-margin-top: 24px;
 }
 
 .team-profile-photo {
@@ -434,6 +440,16 @@ body {
   .team-profile-photo {
     width: 100%;
   }
+}
+
+.service-hero-image {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 24px auto 0;
 }
 
 .service-page {
@@ -1122,6 +1138,25 @@ body {
 
 .services-carousel-cta {
   margin-top: 40px;
+}
+
+.health-funds-banner {
+  padding: 20px 24px;
+  background: var(--accent-bg);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.health-funds-banner p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 32px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-h);
 }
 
 .team-carousel {
