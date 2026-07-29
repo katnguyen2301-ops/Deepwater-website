@@ -14,8 +14,11 @@ function Home() {
             style={{ backgroundImage: `url(${heroBackground})` }}
             aria-hidden="true"
           />
-          <div className="home-hero-overlay" aria-hidden="true" />
-          <h1>Caring for Smiles in the Central Coast for over 25 years</h1>
+                   <div className="home-hero-overlay" aria-hidden="true" />
+          <div className="home-hero-content">
+            <h1>Exceptional Dental Care for Every Smile</h1>
+            <p className="home-hero-subtitle">Caring for Central Coast Smiles for 25+ Years.</p>
+          </div>
         </section>
       </div>
       <div className="home-services-reveal">
