@@ -13,6 +13,7 @@ import gumDiseaseTreatment from '../assets/services/gum-disease-treatment.jpg'
 import teethWhitening from '../assets/services/teeth-whitening.jpg'
 import sportsMouthguards from '../assets/services/sports-mouthguards.jpg'
 import teethGrindingJawPain from '../assets/services/teeth-grinding-jaw-pain.jpg'
+import aligners from '../assets/services/aligners.jpg'
 
 const serviceImages = {
   'checkups-preventive-care': checkupsPreventiveCare,
@@ -30,6 +31,8 @@ const serviceImages = {
   'teeth-whitening': teethWhitening,
   'sports-mouthguards': sportsMouthguards,
   'teeth-grinding-jaw-pain': teethGrindingJawPain,
+  aligners,
+}
 }
 
 export default serviceImages
