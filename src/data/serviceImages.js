@@ -33,6 +33,5 @@ const serviceImages = {
   'teeth-grinding-jaw-pain': teethGrindingJawPain,
   aligners,
 }
-}
 
 export default serviceImages
