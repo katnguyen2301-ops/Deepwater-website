@@ -70,6 +70,11 @@ const services = [
     blurb: 'A cosmetic treatment to help reduce staining and brighten your smile.',
   },
   {
+    path: 'aligners',
+    label: 'Aligners',
+    blurb: 'Clear, removable aligners that gradually straighten your teeth.',
+  },
+  {
     path: 'sports-mouthguards',
     label: 'Sports Mouthguards',
     blurb: 'Custom-fitted mouthguards to help protect your teeth during sport.',
