@@ -4,7 +4,7 @@ const locations = [
     name: 'Deepwater Dental & Cosmetics',
     tagline: 'General & Cosmetic Dentistry Clinic',
     phone: '(02) 4341 3000',
-    email: 'woywoydc@gmail.com',
+    email: 'deepwaterdentalinfo@gmail.com',
     address: '36 George St, Woy Woy NSW 2256',
     bookingUrl:
       'https://www.hotdoc.com.au/medical-centres/woy-woy-NSW-2256/deepwater-dental-cosmetics/doctors',
