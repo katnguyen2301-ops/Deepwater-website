@@ -13,6 +13,7 @@ import WisdomTeeth from './services/WisdomTeeth'
 import GumDiseaseTreatment from './services/GumDiseaseTreatment'
 import TeethGrindingJawPain from './services/TeethGrindingJawPain'
 import TeethWhitening from './services/TeethWhitening'
+import Aligners from './services/Aligners'
 import SportsMouthguards from './services/SportsMouthguards'
 import serviceImages from '../data/serviceImages'
 
@@ -100,6 +101,10 @@ function Services() {
           <Route
             path="teeth-whitening"
             element={<TeethWhitening />}
+          />
+          <Route
+            path="aligners"
+            element={<Aligners />}
           />
           <Route
             path="sports-mouthguards"
