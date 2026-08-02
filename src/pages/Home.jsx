@@ -17,7 +17,7 @@ function Home() {
                    <div className="home-hero-overlay" aria-hidden="true" />
           <div className="home-hero-content">
             <h1>Exceptional Dental Care for Every Smile</h1>
-            <p className="home-hero-subtitle">Caring for Cabramatta Eyesight for Over 30 Years.</p>
+            <p className="home-hero-subtitle">Caring for Central Coast Smiles for Over 25 Years.</p>
           </div>
         </section>
       </div>
