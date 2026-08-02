@@ -11,6 +11,7 @@ function About() {
         <Route path="welcome-to-the-practice" element={<WelcomeToThePractice />} />
         <Route path="our-philosophy" element={<OurPhilosophy />} />
         <Route path="meet-the-team" element={<MeetTheTeam />} />
+        <Route path="our-practice" element={<OurPractice />} />
       </Routes>
     </section>
   )
