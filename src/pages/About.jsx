@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import WelcomeToThePractice from './about/WelcomeToThePractice'
 import OurPhilosophy from './about/OurPhilosophy'
 import MeetTheTeam from './about/MeetTheTeam'
+import OurPractice from './about/OurPractice'
 
 function About() {
   return (
