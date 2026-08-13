@@ -7,7 +7,7 @@ const locations = [
     email: 'deepwaterdentalinfo@gmail.com',
     address: '36 George St, Woy Woy NSW 2256',
     bookingUrl:
-      'https://www.hotdoc.com.au/medical-centres/woy-woy-NSW-2256/deepwater-dental-cosmetics/doctors',
+      'https://www.centaurportal.com/d4w/org-3315/extended_search?location=3831&randomNumber=eb3928cf5f5645977003f41cd17253deb61b4aba55ec209cadc6e73e0361e1f8&shortVer=false&sourceID=null',
     streetViewEmbed:
       'https://www.google.com/maps/embed?pb=!4v1783858449532!6m8!1m7!1sBuROnZ-wTuEpfJUW51pimA!2m2!1d-33.48838755016843!2d151.324726243524!3f56.003063!4f0!5f0.7820865974627469',
     hours: [
