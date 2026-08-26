@@ -1265,6 +1265,8 @@ body {
 .team-tile-photo-link {
   display: block;
   margin-bottom: 16px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .team-tile-photo {
@@ -1279,7 +1281,15 @@ body {
 .team-tile-photo-link:hover .team-tile-photo {
   opacity: 0.85;
 }
-
+.team-tile-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+}
 .team-tile-link {
   font-size: 14px;
   font-weight: 600;
