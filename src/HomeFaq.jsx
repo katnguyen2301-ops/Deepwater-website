@@ -29,8 +29,7 @@ const faqs = [
   {
     question: 'Do you offer payment plans or health fund extras cover?',
     answer:
-      "We accept a range of health funds for extras cover. Get in touch with our team and we can talk through the options available for your treatment.",
-  },
+"We accept a range of health funds for extras cover, as well as Afterpay for flexible payment options. Get in touch with our team and we can talk through the options available for your treatment."  },
 ]
 
 function HomeFaqItem({ question, answer }) {
