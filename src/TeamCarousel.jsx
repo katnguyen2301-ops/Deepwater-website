@@ -1,7 +1,18 @@
+import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import dentists from './data/dentists'
 
 function TeamCarousel() {
+  const trackRef = useRef(null)
+
+  function scrollByCard(direction) {
+    const track = trackRef.current
+    if (!track) return
+    const card = track.querySelector('.team-tile')
+    const amount = card ? card.getBoundingClientRect().width + 40 : 280
+    track.scrollBy({ left: direction * amount, behavior: 'smooth' })
+  }
+
   return (
     <section className="team-carousel">
       <div className="team-carousel-header">
@@ -13,30 +24,50 @@ function TeamCarousel() {
         </p>
       </div>
 
-      <div className="team-grid">
-        {dentists.map((dentist) => (
-          <article key={dentist.slug} className="team-tile">
-            <div className="team-tile-heading">
-              <h3>{dentist.name}</h3>
-              <p className="team-tile-title">{dentist.title}</p>
-            </div>
-            <Link to={`/about/meet-the-team#${dentist.slug}`} className="team-tile-photo-link">
-              {dentist.photo ? (
-                <img className="team-tile-photo" src={dentist.photo} alt={dentist.name} />
-              ) : (
-                <span className="team-tile-photo team-tile-photo-placeholder" aria-hidden="true">
-                  {dentist.name
-                    .split(' ')
-                    .map((part) => part[0])
-                    .join('')}
-                </span>
-              )}
-            </Link>
-            <Link to={`/about/meet-the-team#${dentist.slug}`} className="team-tile-link">
-              Learn more ↗
-            </Link>
-          </article>
-        ))}
+      <div className="team-carousel-row">
+        <button
+          type="button"
+          className="team-carousel-arrow"
+          aria-label="Scroll left"
+          onClick={() => scrollByCard(-1)}
+        >
+          ←
+        </button>
+
+        <div className="team-carousel-track" ref={trackRef}>
+          {dentists.map((dentist) => (
+            <article key={dentist.slug} className="team-tile">
+              <div className="team-tile-heading">
+                <h3>{dentist.name}</h3>
+                <p className="team-tile-title">{dentist.title}</p>
+              </div>
+              <Link to={`/about/meet-the-team#${dentist.slug}`} className="team-tile-photo-link">
+                {dentist.photo ? (
+                  <img className="team-tile-photo" src={dentist.photo} alt={dentist.name} />
+                ) : (
+                  <span className="team-tile-photo team-tile-photo-placeholder" aria-hidden="true">
+                    {dentist.name
+                      .split(' ')
+                      .map((part) => part[0])
+                      .join('')}
+                  </span>
+                )}
+              </Link>
+              <Link to={`/about/meet-the-team#${dentist.slug}`} className="team-tile-link">
+                Learn more ↗
+              </Link>
+            </article>
+          ))}
+        </div>
+
+        <button
+          type="button"
+          className="team-carousel-arrow"
+          aria-label="Scroll right"
+          onClick={() => scrollByCard(1)}
+        >
+          →
+        </button>
       </div>
     </section>
   )
