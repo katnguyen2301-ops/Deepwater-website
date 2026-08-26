@@ -30,7 +30,7 @@ const dentists = [
   },
   {
     slug: 'sally-ellis',
-    name: 'Sally Ellis',
+    name: 'Sally',
     title: 'Practice Manager',
     photo: sallyEllisPhoto,
    bio: [
