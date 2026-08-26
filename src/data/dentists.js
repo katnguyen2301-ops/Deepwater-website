@@ -5,6 +5,7 @@ const dentists = [
   {
     slug: 'dr-timothy-ho',
     name: 'Dr Timothy Ho',
+    credentials: 'DMD (UWA)
     title: 'Principal Dentist',
     photo: timothyHoPhoto,
     bio: [
@@ -26,6 +27,16 @@ const dentists = [
       "Dr Katherine Nguyen looks forward to welcoming you and your family to the practice and helping you smile with confidence.",
     ],
   },
+  {
+  slug: 'sally-ellis',
+  name: 'Sally Ellis',
+  title: 'Practice Manager',
+  photo: sallyEllisPhoto
+  bio: [
+    "Sally leads our front-of-house and administrative team, making sure every patient's journey with us, from booking through to treatment, runs smoothly and stress-free.",
+    "She's passionate about creating a warm, welcoming environment for patients and a supportive workplace for the team, and is always on hand to help with appointments, billing, or any questions about your visit.",
+  ],
+},
 ]
 
 export default dentists
