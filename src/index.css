@@ -64,7 +64,38 @@
 body {
   margin: 0;
 }
+.promo-banner {
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #0e7490, #2dd4bf);
+  text-align: center;
+}
 
+.promo-banner p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px 10px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ecfffc;
+}
+
+.promo-banner span {
+  color: #fff;
+}
+
+.promo-banner a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+.promo-banner a:hover {
+  opacity: 0.85;
+}
 .navbar {
   position: relative;
   z-index: 100;
