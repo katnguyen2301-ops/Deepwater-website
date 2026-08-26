@@ -1,11 +1,12 @@
 import timothyHoPhoto from '../assets/dr-timothy-ho.png'
 import katherineNguyenPhoto from '../assets/dr-katherine-nguyen.jpg'
+import sallyEllisPhoto from '../assets/sally-ellis.jpg'
 
 const dentists = [
   {
     slug: 'dr-timothy-ho',
     name: 'Dr Timothy Ho',
-    credentials: 'DMD (UWA)
+    credentials: 'DMD (UWA)',
     title: 'Principal Dentist',
     photo: timothyHoPhoto,
     bio: [
@@ -28,15 +29,15 @@ const dentists = [
     ],
   },
   {
-  slug: 'sally-ellis',
-  name: 'Sally Ellis',
-  title: 'Practice Manager',
-  photo: sallyEllisPhoto
-  bio: [
-    "Sally leads our front-of-house and administrative team, making sure every patient's journey with us, from booking through to treatment, runs smoothly and stress-free.",
-    "She's passionate about creating a warm, welcoming environment for patients and a supportive workplace for the team, and is always on hand to help with appointments, billing, or any questions about your visit.",
-  ],
-},
+    slug: 'sally-ellis',
+    name: 'Sally Ellis',
+    title: 'Practice Manager',
+    photo: sallyEllisPhoto,
+    bio: [
+      "Sally leads our front-of-house and administrative team, making sure every patient's journey with us, from booking through to treatment, runs smoothly and stress-free.",
+      "She's passionate about creating a warm, welcoming environment for patients and a supportive workplace for the team, and is always on hand to help with appointments, billing, or any questions about your visit.",
+    ],
+  },
 ]
 
 export default dentists
