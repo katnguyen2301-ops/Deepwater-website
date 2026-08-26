@@ -33,9 +33,10 @@ const dentists = [
     name: 'Sally Ellis',
     title: 'Practice Manager',
     photo: sallyEllisPhoto,
-    bio: [
-      "Sally leads our front-of-house and administrative team, making sure every patient's journey with us, from booking through to treatment, runs smoothly and stress-free.",
-      "She's passionate about creating a warm, welcoming environment for patients and a supportive workplace for the team, and is always on hand to help with appointments, billing, or any questions about your visit.",
+   bio: [
+      "Sally has been working in the dental industry for over 21 years and brings a wealth of knowledge to her role as Practice Manager. She always puts our patients' concerns first, and her experience means there's rarely a question she can't answer.",
+      "Bright, bubbly and always up for a chat, Sally has a genuine love for her job and does her best to create a warm, welcoming and joyful environment for both her staff and patients.",
+      "Away from work, Sally loves spending time with her children and family.",
     ],
   },
 ]
