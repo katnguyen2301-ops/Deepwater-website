@@ -21,7 +21,16 @@ function TeamCarousel() {
               <p className="team-tile-title">{dentist.title}</p>
             </div>
             <Link to={`/about/meet-the-team#${dentist.slug}`} className="team-tile-photo-link">
-              <img className="team-tile-photo" src={dentist.photo} alt={dentist.name} />
+              {dentist.photo ? (
+                <img className="team-tile-photo" src={dentist.photo} alt={dentist.name} />
+              ) : (
+                <span className="team-tile-photo team-tile-photo-placeholder" aria-hidden="true">
+                  {dentist.name
+                    .split(' ')
+                    .map((part) => part[0])
+                    .join('')}
+                </span>
+              )}
             </Link>
             <Link to={`/about/meet-the-team#${dentist.slug}`} className="team-tile-link">
               Learn more ↗
